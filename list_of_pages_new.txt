@@ -1,0 +1,390 @@
+Vedas - done
+Rigveda - done
+Yajurveda - done
+Samaveda - done
+Atharvaveda - done
+Krishna Yajurveda - done
+Shukla Yajurveda - done
+Taittiriya Samhita - done
+Katha Samhita - done
+Maitrayani Samhita - done
+Vajasaneyi Samhita - done
+Brahmanas - done
+Aitareya Brahmana - done
+Kaushitaki Brahmana - done
+Shatapatha Brahmana - done
+Taittiriya Brahmana - done
+Panchavimsha Brahmana - done
+Jaiminiya Brahmana - done
+Gopatha Brahmana - done
+Aranyakas - done
+Aitareya Aranyaka - done
+Taittiriya Aranyaka - done
+Brihadaranyaka - done
+Kaushitaki Aranyaka - done
+Upanishads - done
+Isha Upanishad - done
+Kena Upanishad - done
+Katha Upanishad - done
+Prashna Upanishad - done
+Mundaka Upanishad - done
+Mandukya Upanishad - done
+Taittiriya Upanishad - done
+Aitareya Upanishad - done
+Chandogya Upanishad - done
+Brihadaranyaka Upanishad - done
+Shvetashvatara Upanishad - done
+Maitri Upanishad - done
+Kaivalya Upanishad - done
+Amritabindu Upanishad - done
+Tejobindu Upanishad - done
+Narayanopanishad - done
+Rudrahridaya Upanishad - done
+Puranas - done
+Brahma Purana - done
+Padma Purana - done
+Vishnu Purana - done
+Shiva Purana - done
+Bhagavata Purana - done
+Narada Purana
+Markandeya Purana
+Agni Purana
+Bhavishya Purana
+Brahmavaivarta Purana
+Linga Purana
+Varaha Purana
+Skanda Purana
+Vamana Purana
+Kurma Purana
+Matsya Purana
+Garuda Purana
+Brahmanda Purana
+Upapuranas
+Sanatkumara Purana
+Narasimha Purana
+Brihannaradiya Purana
+Shivadharma Purana
+Durvasa Purana
+Kapila Purana
+Manava Purana
+Varuna Purana
+Kalika Purana
+Maheshvara Purana
+Saura Purana
+Parashara Purana
+Itihasa
+Mahabharata
+Ramayana
+Harivamsa
+Bhagavad Gita
+Anugita
+Uttara Ramayana
+Adhyatma Ramayana
+Yoga Vasistha
+Mahabharata Parvas
+Adi Parva
+Sabha Parva
+Vana Parva
+Virata Parva
+Udyoga Parva
+Bhishma Parva
+Drona Parva
+Karna Parva
+Shalya Parva
+Sauptika Parva
+Stri Parva
+Shanti Parva
+Anushasana Parva
+Ashwamedhika Parva
+Ashramavasika Parva
+Mausala Parva
+Mahaprasthanika Parva
+Swargarohana Parva
+Ramayana Kandas
+Bala Kanda
+Ayodhya Kanda
+Aranya Kanda
+Kishkindha Kanda
+Sundara Kanda
+Yuddha Kanda
+Uttara Kanda
+Darshanas
+Nyaya
+Vaisheshika
+Samkhya
+Yoga
+Purva Mimamsa
+Uttara Mimamsa
+Vedanta
+Advaita Vedanta
+Vishishtadvaita
+Dvaita
+Achintya Bheda Abheda
+Shuddhadvaita
+Dvaitadvaita
+Vedanta Texts
+Brahma Sutras
+Bhagavad Gita
+Upanishads
+Panchadasi
+Vivekachudamani
+Atma Bodha
+Aparokshanubhuti
+Sanskrit Grammar
+Panini
+Ashtadhyayi
+Mahabhashya
+Katyayana
+Patanjali
+Siddhanta Kaumudi
+Laghu Siddhanta Kaumudi
+Dhatu Patha
+Ganapatha
+Sanskrit Literature
+Kalidasa
+Bhasa
+Magha
+Bharavi
+Banabhatta
+Bhavabhuti
+Dandin
+Subandhu
+Jayadeva
+Classical Sanskrit Works
+Raghuvamsha
+Kumarasambhava
+Meghaduta
+Abhijnanasakuntalam
+Malavikagnimitram
+Vikramorvashiyam
+Kiratarjuniya
+Shishupalavadha
+Naishadhacharita
+Kadambari
+Harshacharita
+Gita Govinda
+Dashakumaracharita
+Natya Shastra
+Bharata Muni
+Rasa Theory
+Shringara Rasa
+Veera Rasa
+Karuna Rasa
+Raudra Rasa
+Hasya Rasa
+Bhayanaka Rasa
+Bibhatsa Rasa
+Adbhuta Rasa
+Shanta Rasa
+Classical Dance
+Bharatanatyam
+Kathak
+Kathakali
+Kuchipudi
+Odissi
+Mohiniyattam
+Manipuri
+Sattriya
+Indian Music
+Carnatic Music
+Hindustani Music
+Raga
+Tala
+Shruti
+Saptaswara
+Sa
+Ri
+Ga
+Ma
+Pa
+Da
+Ni
+Major Ragas
+Bhairavi
+Todi
+Kalyani
+Shankarabharanam
+Kharaharapriya
+Bhairav
+Yaman
+Darbari
+Malkauns
+Yoga
+Raja Yoga
+Hatha Yoga
+Kundalini Yoga
+Jnana Yoga
+Bhakti Yoga
+Karma Yoga
+Laya Yoga
+Mantra Yoga
+Yoga Texts
+Yoga Sutras
+Hatha Yoga Pradipika
+Gheranda Samhita
+Shiva Samhita
+Goraksha Samhita
+Yoga Concepts
+Samadhi
+Dhyana
+Dharana
+Pratyahara
+Pranayama
+Asana
+Yama
+Niyama
+Chakras
+Muladhara
+Svadhisthana
+Manipura
+Anahata
+Vishuddha
+Ajna
+Sahasrara
+Ayurveda
+Charaka Samhita
+Sushruta Samhita
+Ashtanga Hridaya
+Ashtanga Sangraha
+Bhela Samhita
+Kashyapa Samhita
+Madhava Nidana
+Bhavaprakasha
+Ayurveda Concepts
+Vata
+Pitta
+Kapha
+Tridosha
+Prakriti
+Agni
+Ama
+Ojas
+Tejas
+Dhatus
+Rasa
+Rakta
+Mamsa
+Meda
+Asthi
+Majja
+Shukra
+Panchakarma
+Vamana
+Virechana
+Basti
+Nasya
+Raktamokshana
+Sacred Rivers
+Ganga
+Yamuna
+Saraswati
+Godavari
+Narmada
+Kaveri
+Krishna River
+Sarayu
+Sindhu
+Brahmaputra
+Sacred Cities
+Ayodhya
+Mathura
+Haridwar
+Varanasi
+Kanchipuram
+Ujjain
+Dwarka
+Puri
+Char Dham
+Badrinath
+Dwarka
+Puri
+Rameswaram
+Jyotirlingas
+Somnath
+Mallikarjuna
+Mahakaleshwar
+Omkareshwar
+Kedarnath
+Bhimashankar
+Kashi Vishwanath
+Trimbakeshwar
+Vaidyanath
+Nageshwar
+Rameshwaram
+Grishneshwar
+Temples
+Tirupati Balaji
+Jagannath Temple
+Meenakshi Temple
+Brihadeeswara Temple
+Konark Sun Temple
+Kedarnath Temple
+Badrinath Temple
+Ramanathaswamy Temple
+Akshardham Temple
+Indian Astronomy
+Aryabhata
+Varahamihira
+Brahmagupta
+Bhaskara
+Surya Siddhanta
+Aryabhatiya
+Brahmasphutasiddhanta
+Siddhanta Shiromani
+Indian Mathematics
+Zero
+Decimal System
+Place Value System
+Algebra
+Trigonometry
+Sulba Sutras
+Ancient Universities
+Nalanda
+Takshashila
+Vikramashila
+Vallabhi
+Odantapuri
+Festivals
+Diwali
+Holi
+Navaratri
+Durga Puja
+Dussehra
+Janmashtami
+Rama Navami
+Makar Sankranti
+Pongal
+Onam
+Ganesh Chaturthi
+Mahashivaratri
+Raksha Bandhan
+Guru Purnima
+Karva Chauth
+Chhath Puja
+Sacred Mountains
+Mount Kailash
+Mount Meru
+Govardhana
+Arunachala
+Girnar
+Himalayas
+Dynasties
+Maurya Dynasty
+Gupta Dynasty
+Chola Dynasty
+Pandya Dynasty
+Satavahana Dynasty
+Pallava Dynasty
+Chalukya Dynasty
+Rashtrakuta Dynasty
+Vijayanagara Empire
+Mughal Empire
+Sacred Geography
+Sapta Sindhu
+Bharata Varsha
+Aryavarta
+Jambudvipa
+Ilavrita Varsha
+Meru Mountain
+Sapta Dvipa
+Sapta Samudra

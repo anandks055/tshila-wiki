@@ -1,0 +1,277 @@
+Yoga - done
+Ayurveda - done
+Yoga Philosophy - done
+Ayurvedic Medicine - done
+Vedic Medicine - done
+Indian Traditional Medicine - done
+Holistic Healing - done
+Natural Healing - done
+Patanjali - done
+Charaka - done
+Sushruta - done
+Vagbhata - done
+Dhanvantari - done
+Agastya - done
+Yajnavalkya - done
+Kapila - done
+Goraksha - done
+Matsyendranath - done
+Swatmarama - done
+Nagarjuna - done
+Atreya - done
+Punarvasu Atreya - done
+Kashyapa - done
+Jivaka - done
+Chyavana - done
+Bhela - done
+Harita - done
+Yoga Sutras - done
+Yoga Sutras of Patanjali - done
+Hatha Yoga Pradipika - done
+Gheranda Samhita - done
+Shiva Samhita - done
+Yoga Yajnavalkya - done
+Goraksha Samhita - done
+Charaka Samhita - done
+Sushruta Samhita - done
+Ashtanga Hridaya - done
+Ashtanga Sangraha - done
+Bhela Samhita - done
+Kashyapa Samhita - done
+Bhavaprakasha - done
+Sharngadhara Samhita - done
+Madhava Nidana - done
+Eight Limbs of Yoga - done
+Ashtanga Yoga - done
+Yama - done
+Niyama - done
+Asana - done
+Pranayama - done
+Pratyahara - done
+Dharana - done
+Dhyana - done
+Samadhi - done
+Five Yamas - done
+Ahimsa - done
+Satya - done
+Asteya - done
+Brahmacharya - done
+Aparigraha - done
+Five Niyamas - done
+Saucha - done
+Santosha - done
+Tapas - done
+Svadhyaya - done
+Ishvara Pranidhana - done
+Meditation - done
+Mindfulness - done
+Concentration - done
+Contemplation - done
+Self Realization - done
+Liberation - done
+Moksha - done
+Kaivalya - done
+Samadhi State - done
+Nirvikalpa Samadhi - done
+Savikalpa Samadhi - done
+Sahaja Samadhi - done
+Hatha Yoga - done
+Raja Yoga - done
+Bhakti Yoga - done
+Jnana Yoga - done
+Karma Yoga - done
+Kundalini Yoga - done
+Laya Yoga - done
+Mantra Yoga - done
+Tantra Yoga - done
+Integral Yoga - done
+Kundalini - done
+Kundalini Awakening - done
+Kundalini Shakti - done
+Chakra System - done
+Seven Chakras - done
+Muladhara Chakra - done
+Svadhisthana Chakra - done
+Manipura Chakra - done
+Anahata Chakra - done
+Vishuddha Chakra - done
+Ajna Chakra - done
+Sahasrara Chakra - done
+Three Nadis - done
+Ida Nadi - done
+Pingala Nadi - done
+Sushumna Nadi - done
+Prana - done
+Apana - done
+Samana - done
+Udana - done
+Vyana - done
+Prana Vayu - done
+Subtle Energy - done
+Life Force - done
+Pranayama - done
+Breath Control - done
+Nadi Shodhana - done
+Anulom Vilom - done
+Bhastrika - done
+Kapalabhati - done
+Ujjayi - done
+Sheetali - done
+Sheetkari - done
+Bhramari - done
+Surya Bhedana - done
+Chandra Bhedana - done
+Bandhas - done
+Mula Bandha - done
+Uddiyana Bandha - done
+Jalandhara Bandha - done
+Maha Bandha - done
+Mudras - done
+Chin Mudra - done
+Jnana Mudra - done
+Maha Mudra - done
+Khechari Mudra - done
+Viparita Karani Mudra - done
+Yoga Mudra - done
+Yoni Mudra - done
+Shatkarmas - done
+Six Purification Techniques - done
+Neti - done
+Dhauti - done
+Nauli - done
+Basti - done
+Kapalabhati - done
+Trataka - done
+Major Yogic Asanas - done
+Padmasana - done
+Siddhasana - done
+Vajrasana - done
+Tadasana - done
+Trikonasana - done
+Bhujangasana - done
+Shalabhasana - done
+Dhanurasana - done
+Paschimottanasana - done
+Ardha Matsyendrasana - done
+Sarvangasana - done
+Halasana - done
+Mayurasana - done
+Shavasana - done
+Surya Namaskar - done
+Surya Namaskar - done
+Sun Salutation - done
+Yoga Nidra - done
+Yoga Therapy - done
+Yoga Retreat - done
+Yoga Teacher - done
+Ayurveda - done
+Ayurvedic Diagnosis - done
+Ayurvedic Treatment - done
+Ayurvedic Herbs - done
+Ayurvedic Pharmacology - done
+Three Doshas - done
+Vata Dosha - done
+Pitta Dosha - done
+Kapha Dosha - done
+Tridosha Theory - done
+Dosha Balance - done
+Dosha Imbalance - done
+Dosha Constitution - done
+Prakriti - done
+Vikriti - done
+Seven Dhatus - done
+Rasa Dhatu - done
+Rakta Dhatu - done
+Mamsa Dhatu - done
+Meda Dhatu - done
+Asthi Dhatu - done
+Majja Dhatu - done
+Shukra Dhatu - done
+Three Malas - done
+Purisha - done
+Mutra - done
+Sveda - done
+Agni - done
+Digestive Fire - done
+Jatharagni - done
+Dhatvagni - done
+Bhutagni - done
+Ama - done
+Toxins - done
+Detoxification - done
+Ojas - done
+Vital Essence - done
+Tejas - done
+Prana Energy - done
+Six Tastes - done
+Madhura - done
+Amla - done
+Lavana - done
+Katu - done
+Tikta - done
+Kashaya - done
+Ayurvedic Diet - done
+Ayurvedic Nutrition - done
+Ayurvedic Lifestyle - done
+Dinacharya - done
+Ritucharya - done
+Daily Routine - done
+Seasonal Regimen - done
+Panchakarma - done
+Ayurvedic Detox - done
+Vamana - done
+Virechana - done
+Basti - done
+Nasya - done
+Raktamokshana - done
+Ayurvedic Massage - done
+Abhyanga - done
+Shirodhara - done
+Udvartana - done
+Pizhichil - done
+Takradhara - done
+Rasayana Therapy - done
+Rejuvenation Therapy - done
+Anti Aging Therapy - done
+Vajikarana Therapy - done
+Ayurvedic Herbs - done
+Ashwagandha - done
+Brahmi - done
+Tulsi - done
+Neem - done
+Amla - done
+Haritaki - done
+Bibhitaki - done
+Triphala - done
+Guduchi - done
+Shatavari - done
+Guggulu - done
+Turmeric - done
+Licorice - done
+Sandalwood - done
+Ayurvedic Preparations - done
+Chyawanprash - done
+Arishta - done
+Asava - done
+Ghrita - done
+Taila - done
+Bhasma - done
+Ayurvedic Surgery - done
+Ancient Surgery - done
+Plastic Surgery in Ayurveda - done
+Sushruta Surgery - done
+Cataract Surgery - done
+Rhinoplasty - done
+Ayurvedic Hospitals - done
+Ayurvedic Clinics - done
+Ayurvedic Colleges - done
+Ayurvedic Practitioners - done
+Ayurvedic Pharmacology - done
+Ayurvedic Pharmacy - done
+Dhanvantari Avatar - done
+Birth of Dhanvantari - done
+Dhanvantari and Amrita - done
+Ayurveda Revelation - done
+Transmission of Ayurveda - done
+Atreya School - done
+Dhanvantari School - doneExampleTopic - done
