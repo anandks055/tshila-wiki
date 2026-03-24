@@ -1,12 +1,28 @@
-## Bimmu
+## Etymology
 
-**Bimmu**, a Kannada term (ನ್ನದ ಪದ: ಬಿಮ್ಮು), phonetically pronounced as *bimmu*, holds multiple meanings within Indic knowledge traditions [1].
+The Kannada word **bimmu** (ಬಿಮ್ಮು) [1] has multiple meanings and connotations within Indic knowledge traditions.
 
-1. **Noble and Graceful Behaviour**: It signifies noble and graceful behavior, embodying the essence of refined conduct and demeanor [1].
-2. **Haughtiness and Disdain**: Conversely, it can also denote haughtiness or disdainful behavior, indicating an attitude of arrogance or contempt towards others [1].
-3. **Condition of Being Tightly Bound**: Additionally, *bimmu* is used to describe the condition of being tightly bound or tied up, reflecting a state of constraint or restriction [1].
+## Shruti: Definitions and Usage
 
-Furthermore, in another context, *bimmu* serves as an onomatopoeic word that expresses the feeling of emptiness, capturing the essence of void or lack through its sound [1].
+### Noun Definitions from Alar: Kan-Eng dict by V. Krishna [1]
+
+#### Noble Behavior
+One definition of **bimmu** is "noble, graceful behavior." This usage signifies the elevated conduct or demeanor expected of individuals in certain contexts within Indic knowledge traditions.
+
+#### Haughtiness and Disdainful Behavior
+Another meaning of **bimmu** is "haughtiness; disdainful behavior," indicating a posture or attitude marked by a sense of superiority and contempt for others.
+
+#### Condition of Being Tightly Bound
+Additionally, **bimmu** can refer to the "condition of being tied tightly," suggesting a state of constraint or tight binding.
+
+#### Onomatopoeic Word
+Lastly, **bimmu** is used as an onomatopoeic word to express "the feeling of emptiness." This usage highlights its role in conveying sensory experiences and emotional states through sound representation.
+
+## Smriti: Similar Words
+
+The term **bimmu** shares conceptual similarities with other terms that denote behavior, attitudes, or conditions. These include words related to dignity, disdain, and the sensation of void or absence.
+
+---
 
 ## Sources and References
 [1]: Alar: Kan-Eng dict by V. Krishna

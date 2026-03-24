@@ -1,43 +1,63 @@
-## Caraṇa
+## Etymology
 
-Caraṇa (चरण) literally means "that by which one moves" [1][2]. The term has a wide range of meanings and uses across Indic knowledge traditions.
+The term **caraṇa** (चरण) has its roots in Sanskrit and is derived from the verb *char* (to move). It literally translates to "that by which one moves."
 
-### General Meanings
+## General Meaning
 
-In various contexts, caraṇa can mean:
-- Foot [1][5][6][7][9]
-- A quarter of verse [1][4][5][6][9]
-- Pillar of a temple [1][9]
-- Part of a musical composition in Carnatic and bilāsanda music [3][4]
+Caraṇa encompasses a variety of meanings across Indic knowledge traditions:
 
-### Vedic Terminology
+- Foot [1][2][3]
 
-In the Vedic terminology, caraṇa refers to a branch or school (śākhā) of Vedic learning. It includes not only the particular śākhā but also its allied literature like law-books [1][5]. Caraṇa is mentioned in the Kas. on P.IV.2.46 as a synonym for śākhā, which refers to a branch or school of Vedic Learning [5].
+- A quarter of verse or stanza [4][5][3]
 
-### Buddhism
+- Pillar of a temple [6][7]
 
-In Buddhism, caraṇa refers to eight aspects of character such as fearlessness and self-control that are fit to be cultivated [1].
+- Part of a musical composition in Carnatic and bilāsanda music [6][7]
 
-### Jainism
+## Caraṇa as per Vedas
 
-In Jain scriptures, caraṇa denotes the part dealing with the conduct of ascetics and householders [7].
+In the Vedic terminology, caraṇa refers to a branch (*śākhā*) of the Veda and includes not only the particular śākhā but also its allied literature like law-books [6][5].
 
-### Other Uses
+## Caraṇa in Buddhism
 
-- Symbol for the number two [7]
-- An arrangement of a certain number of lines forming a division of a poem (stanza) [6][9]
+In Buddhist contexts, caraṇa denotes eight aspects of character such as fearlessness and self-control that are fit to be cultivated.
 
-### Vedic Rituals
+## Caraṇa in Literature and Music
 
-In the context of Vedic rituals, caraṇa refers to the practice or procedure involved in rituals such as chamasakampana [8].
+Caraṇa is used in different literary and musical contexts:
+- In poetry, it refers to a quarter or stanza [5][2].
+- In Carnatic music, it signifies part of the composition [6].
+
+## Caraṇa as Behavior and Conduct
+
+In Jain scriptures, caraṇa pertains to the conduct and procedures for ascetics and householders [8]. It also denotes behavior and manners in general [2].
+
+## Caraṇa in Vedic Rituals
+
+Caraṇa is associated with specific rituals and practices such as *vyavahāra* (customary practice) and *anuṣṭhāna* (performance or conduct) [9][3].
+
+## Symbolic Interpretations
+
+In some contexts, caraṇa symbolizes the number two [8] and represents movement or action [2].
+
+## Similar Words
+
+The term **caraṇa** has several variations:
+- carana
+- cāraṇa
+- caraṇaḥ
+- cāraṇaḥ
+- caraṇam
+- caraṇaṃ [10]
 
 ## Sources and References
-[1]: Conc. Encyl. Hinduism, Swami Harshananda, hindupedia.com
-[2]: Skt Glossary, (extracted 2024), SanskritDocuments.org
-[3]: Conc. Encyl. Hinduism, Swami Harshananda, (extracted 2024), hindupedia.org
+[1]: Skt Glossary, (extracted 2024), SanskritDocuments.org
+[2]: Vācaspatyam, BHAṬṬĀCĀRYA, T. V. (1873)., Chaukhamba
+[3]: Bharati Kosha
 [4]: Caraṇa, Conc. Encyl. Hinduism, Swami Harshananda
 [5]: Dict. Skt. Grammar, K V Abhyankar (1961), Oriental Institute
-[6]: Vācaspatyam, BHAṬṬĀCĀRYA, T. V. (1873)., Chaukhamba
-[7]: Alar: Kan-Eng dict by V. Krishna
-[8]: Vedic Rituals Kosha
-[9]: Bharati Kosha
+[6]: Conc. Encyl. Hinduism, Swami Harshananda, hindupedia.com
+[7]: Conc. Encyl. Hinduism, Swami Harshananda, (extracted 2024), hindupedia.org
+[8]: Alar: Kan-Eng dict by V. Krishna
+[9]: Vedic Rituals Kosha
+[10]: Similar words

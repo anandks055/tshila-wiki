@@ -210,6 +210,8 @@ def _build_article_prompt(topic: str, tool_data: str) -> str:
             f"Explain the meaning of **{topic}** using only the dictionary definitions below.",
             "Do not attempt to produce a long Wikipedia-style article – a brief explanation or paragraph paraphrasing the definitions is sufficient.",
             "Do not fabricate any additional content beyond what the definitions provide.",
+            "Include EVERY field and object from the dictionary API response: word, other_scripts, llm_def, definitions, and similar_words.",
+            "If similar_words are present, report them explicitly in the article content.",
             "",
             "=== SOURCE DATA ===",
             "",
@@ -236,6 +238,8 @@ def _build_article_prompt(topic: str, tool_data: str) -> str:
             "   if you fail to include this section, the system will append it automatically after generation.",
             "8. The article’s body MUST include at least one reference token such as [ref1].  In fact, the first paragraph should contain [ref1].  If you cannot show a normal citation, simply append `[ref1]` at the end of the opening paragraph.  The system will also enforce this after generation if necessary.",
             "9. Use ALL definitions and passages provided below — do not skip any.",
+            "10. Include EVERY field and object from the dictionary API response when found: word, other_scripts, llm_def, definitions, and similar_words.",
+            "11. If similar_words are present, list them all in the article and explain their relevance.",
             "9. - Use *Markdown* for formatting.",
             "- Summarize in simple language, then add supporting detail from tool outputs.",
             "- Every factual statement must have a source block right after it.",
@@ -261,6 +265,31 @@ def _build_article_prompt(topic: str, tool_data: str) -> str:
             body.append(f"  {text}")
             body.append("")
             ref_map.append((f"ref{len(ref_map)+1}", src))
+
+    # Raw dictionary metadata (explicitly preserve all fields)
+    if isinstance(defn, dict):
+        raw_word = defn.get("word")
+        other_scripts = defn.get("other_scripts")
+        llm_def = defn.get("llm_def")
+        if raw_word or other_scripts or llm_def:
+            body.append("RAW DICTIONARY METADATA:")
+            if raw_word:
+                body.append(f"  Normalized word: {raw_word}")
+            if other_scripts:
+                body.append(f"  Other scripts: {json.dumps(other_scripts, ensure_ascii=False)}")
+            if llm_def:
+                body.append(f"  llm_def: {llm_def}")
+            body.append("")
+
+    # Similar words section (if present)
+    if isinstance(defn, dict):
+        similar_words = defn.get("similar_words", [])
+        if similar_words:
+            body.append(f"SIMILAR WORDS ({len(similar_words)}):")
+            body.append("  " + ", ".join(similar_words))
+            body.append("")
+            # No direct citation map needed for similar words, but include as a source.
+            ref_map.append((f"ref{len(ref_map)+1}", "Similar words"))
 
     # Chunks
     chunks_data = results.get("chunks", {})
@@ -370,9 +399,17 @@ def _build_flexible_prompt(topic: str, tool_data: str) -> str:
 
 DO NOT invent any new facts, characters, events, or narrative beyond what is present in the supplied text. If the source material is brief, your output should be correspondingly brief (do not pad for length).
 
-Use fluent English prose and Markdown formatting for any headings you choose to include.
-Preferably use Indic categories like Shruti, smriti, purana, itihasa, kavya etc instead of mythology, sacred texts or others.
-Do not use the term "Hinduism" and instead use the term "Indic knowledge traditions".
+Use fluent English prose and Markdown formatting (##) for section headings.
+- Include ALL details from the dictionary API response (word, other_scripts, llm_def, definitions, similar_words) in the generated article.
+- If similar_words are present, list them and connect them to the main term.
+
+## STRUCTURAL AND TERMINOLOGY GUIDELINES (CRITICAL)
+- Always include an Etymology section (## Etymology) at the start if word meaning/origin is available.
+- For longer content involving multiple texts or contexts, organize into multiple thematic sections.
+- Try to Use (NOT MANDATORY) authentic Indic terminology for section headings: Shruti, Smriti, Purana, Itihasa, Kavya, Dharma, Artha, etc.
+- Avoid (NOT MANDATORY) Western academic terms: no "mythology", "sacred texts" — use traditional Indic categories instead.
+- NEVER use the term "Hinduism" — always write "Indic knowledge traditions".
+- When sources mention different texts (Mahabharata, Ramayana, Puranas, etc.), create separate sections for each if content is substantial.
 
 ## Completeness (critical)
 - Include ALL content from the source texts — every named person, warrior, event, quote, and detail.
@@ -459,6 +496,29 @@ Do not use the term "Hinduism" and instead use the term "Indic knowledge traditi
             body.append(f"  SOURCE {i} — {src}:")
             body.append(f"  {clean_text}")
             body.append("")
+
+    # Raw dictionary metadata (explicitly include all fields in output)
+    if isinstance(defn, dict):
+        raw_word = defn.get("word")
+        other_scripts = defn.get("other_scripts")
+        llm_def = defn.get("llm_def")
+        if raw_word or other_scripts or llm_def:
+            body.append("RAW DICTIONARY METADATA:")
+            if raw_word:
+                body.append(f"  Normalized word: {raw_word}")
+            if other_scripts:
+                body.append(f"  Other scripts: {json.dumps(other_scripts, ensure_ascii=False)}")
+            if llm_def:
+                body.append(f"  llm_def: {llm_def}")
+            body.append("")
+
+    # Similar words section (if present)
+    similar_words = defn.get("similar_words", []) if isinstance(defn, dict) else []
+    if similar_words:
+        body.append(f"SIMILAR WORDS ({len(similar_words)}):")
+        body.append("  " + ", ".join(similar_words))
+        body.append("")
+        _add_ref("Similar words", "")
 
     if global_refs:
         ref_map = sorted(global_refs.values(), key=lambda x: x[0])  # sort by assigned number
@@ -551,14 +611,19 @@ _writer_agent = Agent(
 
 # new flexible writer that adapts length to supplied context
 _FLEXIBLE_SYSTEM = (
-    "You are an encyclopedia writer. When given source data, produce a coherent article in English prose. "
+    "You are an encyclopedia writer specializing in Indic knowledge traditions. When given source data, produce a coherent article in English prose. "
     "Do not enforce any fixed word count, section count, or paragraph rules. "
     "Let the length of the article be roughly proportional to the amount of data provided. "
-    "Use Markdown for headings where appropriate, but do not invent arbitrary structure. "
+    "Use Markdown for headings (##) where appropriate to organize content into distinct sections. "
     "Only use the provided definitions and heritage passages; ignore verse data altogether. ",
-    ("Critically: do not fabricate or hallucinate information. If the supplied material is minimal, "
-     "acknowledge that there is limited information and refrain from padding the text with "
-     "irrelevant or nonsensical passages.")
+    ("IMPORTANT STRUCTURAL GUIDELINES:\n"
+     "- Always begin with an Etymology section (## Etymology) if the word origin or meaning is mentioned.\n"
+     "- For substantial content (multiple sources/contexts), organize into multiple thematic sections.\n"
+     "- Use Indic terminology for section headings: Shruti, Smriti, Purana, Itihasa, Kavya, Dharma, etc.\n"
+     "- Avoid Western academic terms like 'mythology', 'sacred texts', 'history' in favor of traditional Indic categories.\n"
+     "- NEVER use the term 'Hinduism' — always use 'Indic knowledge traditions' instead.\n"
+     "- Do not fabricate or hallucinate information. If the supplied material is minimal, "
+     "acknowledge that there is limited information and refrain from padding the text.")
 )
 
 _flexible_writer_agent = Agent(

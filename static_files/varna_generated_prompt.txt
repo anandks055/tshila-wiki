@@ -1,0 +1,114 @@
+Write an encyclopedia-style article about **varna** using ONLY the information below.
+
+DO NOT invent any new facts, characters, events, or narrative beyond what is present in the supplied text. If the source material is brief, your output should be correspondingly brief (do not pad for length).
+
+Use fluent English prose and Markdown formatting (##) for section headings.
+- Include ALL details from the dictionary API response (word, other_scripts, llm_def, definitions, similar_words) in the generated article.
+- If similar_words are present, list them and connect them to the main term.
+
+## STRUCTURAL AND TERMINOLOGY GUIDELINES (CRITICAL)
+- Always include an Etymology section (## Etymology) at the start if word meaning/origin is available.
+- For longer content involving multiple texts or contexts, organize into multiple thematic sections.
+- Try to Use (NOT MANDATORY) authentic Indic terminology for section headings: Shruti, Smriti, Purana, Itihasa, Kavya, Dharma, Artha, etc.
+- Avoid (NOT MANDATORY) Western academic terms: no "mythology", "sacred texts" — use traditional Indic categories instead.
+- NEVER use the term "Hinduism" — always write "Indic knowledge traditions".
+- When sources mention different texts (Mahabharata, Ramayana, Puranas, etc.), create separate sections for each if content is substantial.
+
+## Completeness (critical)
+- Include ALL content from the source texts — every named person, warrior, event, quote, and detail.
+- Do NOT summarise lists; if the source gives 20 warriors killed, list all 20.
+- Do NOT omit direct quotes; if a speaker's exact words are given, reproduce them fully.
+- Do NOT collapse step-by-step sequences; reproduce every step in the order given.
+- If the source material is long and rich, your article must be correspondingly long and complete.
+
+## Reference handling
+- The source texts below have already had their inline [N] citations substituted with the correct final reference numbers matching the REFERENCE_MAP.
+- Copy those [N] numbers through exactly as they appear — do NOT change, remove, or renumber them.
+- Every factual sentence must carry its citation(s) inline, e.g. "…fought valiantly [3][5]."
+- Do NOT cite a number that does not appear in the REFERENCE_MAP.
+- Do NOT leave a REFERENCE_MAP entry uncited if the fact it supports appears in your article.
+
+## Sources and References section
+- Add a ## Sources and References section at the very end.
+- List every reference number that you cited inline, with its exact name from the REFERENCE_MAP.
+- Format: [N]: source name
+- No URLs.
+
+=== SOURCE DATA ===
+
+DEFINITIONS FROM 9 SOURCES:
+  SOURCE 1 — The Purana index. Madras by RAMACHANDRA DĪKSHITAR, V. R. (1951-55), Univ. of Madras.:
+  a Sudharmāṇa god.
+
+  SOURCE 2 — Sanskrit Glossary from Sanskrit Documents Website:
+  colour
+
+  SOURCE 3 — Concise Encyclopedia of Hinduism by Swami Harshananda, (extracted 2024), hindupedia.org:
+  Varṇa refers to the social divisions in hindū society that have existed for thousands of years, denoting the fourfold division of ancient bhāratīya society into distinct social classes based on occupation and duties [4][5][6]. These divisions became rigid and hereditary over time, leading to the creation of various castes and subcastes through intermixing, including the Niṣāda caste [7]. Each varṇa has specific duties (svadharma) one is bound to perform according to their social standing, and specific bathing rituals, such as brāhmaṇa householders bathing twice daily [6][5]. The concept of varṇasaṅkara denotes the mixing or intermarriage between different varnas, while sāmanya dharmas apply universally beyond these divisions [8][13]. Varṇa also refers to the letters of the saṃskṛta alphabet, totaling 63 or 64 when considering different intonations (udātta, anudātta, svarita) [9]. In some contexts, the leaders of the baṅgāla School of vaiṣṇava dharma disregarded the varṇa system in favor of cultivating primary moral and social values [10]. Individuals within the varṇa system can transcend their social divisions after realizing the Self, as described in texts like the Avadhuta Upaniṣad and Devīgītā [11][12]. Opportunities for elevation within the varṇa system exist through adherence to dharma, impacting prescribed duties and practices in conjunction with āśrama and ācāra [14][15].
+
+  SOURCE 4 — HISTORICAL GEOGRAPHY OF ANCIENT INDIA By BIMALA CHURN LAW, (extracted 2024):
+  Stream joining the river near Athni.
+Reference:
+The content is extracted from the below word(s) in Hist. Geo. Anc. India, B C Law, 1954,
+kṛṣṇa, Hist. Geo. Anc. India, B C Law, 1954
+
+  SOURCE 5 — A Dictionary of Sanskrit Grammar by Mahāmahopādhyāya KASHINATH VASUDEV ABHYANKAR:
+  phonemic unit: a letter The term was in use in ancient times and found used generally in the masculine gender, but occasionally in the neuter gender too; .e. g. उपदिष्टा इमे वर्णाः M.Bh. Ahnika 1. also मा कदाचिदवर्णे भूत् M.Bh. on Siva Sutras 3, 4.
+
+  SOURCE 6 — Dhara Summary, Bhagavata Purana by G. V. Tagare:
+  Varṇa, according to the Bhagavata Purana, refers to the four social classes in Hindu society, each with specific religious duties that contribute to the pursuit of liberation from Saṃsāra [20][20][21].
+
+
+  SOURCE 7 — Dhara Summary, Agni Purana by N. Gangadharan:
+  Varna, according to the Agni Purana, has multiple roles and representations. In Chapter 247, it is mentioned as one of the gods worshipped on the southern side of the building site layout [23]. Additionally, in Chapter 369, Varna is described as the God of Death, responsible for determining the fate of souls after death based on their deeds [24].
+
+
+  SOURCE 8 — Dhara Summary, Skanda Purana by G. V. Tagare:
+  Varṇa, as described in the Skanda Purana, refers to the caste system and plays a crucial role in both societal structure and religious practices. According to Book 6 - Nāgara-khaṇḍa, Section 1 - Tīrtha-māhātmya, Chapter 218 - Rules Prescribed for Śrāddha Performance, Varṇa dictates that Śrāddha rituals should adhere to the traditions specific to one's caste [26]. Additionally, in Chapter 237 - Greatness of Vrata, Varṇa is personified by Viṣṇu, emphasizing his embodiment of societal order and his central role in maintaining the caste-based social hierarchy [27].
+
+
+  SOURCE 9 — Summary from the location Data:
+  Varna is a village in Kaprada Tehsil, Valsad District, Gujarat, India, with a pin code of 396126. It is located approximately 43 kilometers south of Valsad and is surrounded by Dadra Nagar Haveli, Pardi, Vapi, and Dharampur Talukas. Another Varna exists in Jintur Tehsil, Parbhani District, Maharashtra, India, with a pin code of 431508, situated around 45 kilometers north of Parbhani and bordered by Sailu, Sengaon, Mantha, and Aundha Nagnath Talukas. Additionally, there are two more Varanas in Dholka Tehsil, Ahmedabad District, Gujarat, sharing the same pin code of 382265. These villages are characterized by their proximity to rivers such as Sabarmati and Dhaman Par, and they offer various educational institutions including schools and colleges.
+
+SIMILAR WORDS (6):
+  varṇ, varṇā, vārṇa, varṇaḥ, varnam, varṇaṃ
+
+REFERENCE_MAP:
+The inline citation numbers in the source texts above have already been
+substituted to match this map. Copy them through as-is — do NOT renumber.
+  [1]: The Purana index. Madras by RAMACHANDRA DĪKSHITAR, V. R. (1951-55), Univ. of Madras.
+  [2]: Sanskrit Glossary from Sanskrit Documents Website
+  [3]: Concise Encyclopedia of Hinduism by Swami Harshananda, (extracted 2024), hindupedia.org
+  [4]: Ābhīras, Conc. Encyl. Hinduism, Swami Harshananda
+  [5]: Snāna, Conc. Encyl. Hinduism, Swami Harshananda
+  [6]: Svadharma, Conc. Encyl. Hinduism, Swami Harshananda
+  [7]: Niṣāda, Conc. Encyl. Hinduism, Swami Harshananda
+  [8]: Śikṣā, Conc. Encyl. Hinduism, Swami Harshananda
+  [9]: Acintyabhedābheda School, Conc. Encyl. Hinduism, Swami Harshananda
+  [10]: Ambastha, Conc. Encyl. Hinduism, Swami Harshananda
+  [11]: Avadhuta Upaniṣad, Conc. Encyl. Hinduism, Swami Harshananda
+  [12]: Devīgītā, Conc. Encyl. Hinduism, Swami Harshananda
+  [13]: Kāyastha, Conc. Encyl. Hinduism, Swami Harshananda
+  [14]: Maitri, Conc. Encyl. Hinduism, Swami Harshananda
+  [15]: Parāśaragitā, Conc. Encyl. Hinduism, Swami Harshananda
+  [16]: Ācāra, Conc. Encyl. Hinduism, Swami Harshananda
+  [17]: HISTORICAL GEOGRAPHY OF ANCIENT INDIA By BIMALA CHURN LAW, (extracted 2024)
+  [18]: A Dictionary of Sanskrit Grammar by Mahāmahopādhyāya KASHINATH VASUDEV ABHYANKAR
+  [19]: Dhara Summary, Bhagavata Purana by G. V. Tagare
+  [20]: Bhagavata Purana->Book 11 - Eleventh Skandha->Chapter 18 - Duties of Hermits (Vānaprastha) and Sannyāsins
+  [21]: Bhagavata Purana->Book 11 - Eleventh Skandha->Chapter 20 - Elucidation of Karma, Jñāna and Bhakti Yogas
+  [22]: Dhara Summary, Agni Purana by N. Gangadharan
+  [23]: Agni Purana -> Chapter 247 - The characteristics of a site for Building (vāstu-lakṣaṇa)
+  [24]: Agni Purana -> Chapter 369 - The description of absolute dissolution and the process of creation
+  [25]: Dhara Summary, Skanda Purana by G. V. Tagare
+  [26]: Skanda Purana->Book 6 - Nāgara-khaṇḍa->Section 1 - Tīrtha-māhātmya->Chapter 218 - Rules Prescribed for Śrāddha Performance
+  [27]: Skanda Purana->Book 6 - Nāgara-khaṇḍa->Section 1 - Tīrtha-māhātmya->Chapter 237 - Greatness of Vrata
+  [28]: Summary from the location Data
+  [29]: Similar words
+
+=== END OF SOURCE DATA ===
+
+IMPORTANT: The inline [N] citations in the source texts above already use the correct
+final reference numbers from the REFERENCE_MAP. Do NOT change them.
+Include ALL content from the source texts — do not skip quotes, lists, or sequences.
+For every named warrior, event, quote, or detail in the source, include it in the article.

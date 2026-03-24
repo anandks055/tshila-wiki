@@ -75,6 +75,74 @@ def filter_unused_references(text: str) -> str:
     return "\n".join(out).rstrip() + "\n"
 
 
+def renumber_references(text: str) -> str:
+    """Renumber all references sequentially (1, 2, 3, ...) and update inline citations."""
+    REF_HEADERS = ["## Sources and References", "## Sources & References", "## References", "## Sources"]
+    
+    header_idx = -1
+    header_used = None
+    for h in REF_HEADERS:
+        marker = "\n" + h
+        if marker in text:
+            header_idx = text.index(marker)
+            header_used = h
+            break
+        if text.startswith(h):
+            header_idx = 0
+            header_used = h
+            break
+    
+    if header_idx == -1:
+        return text
+    
+    if header_idx == 0:
+        body = ""
+        refs_section = text
+    else:
+        body = text[:header_idx]
+        refs_section = text[header_idx:]
+    
+    # Parse references: [N]: text
+    ref_pattern = re.compile(r'^\[(\d+)\]:\s*(.+)$', re.MULTILINE)
+    old_refs = {}
+    for match in ref_pattern.finditer(refs_section):
+        old_num = int(match.group(1))
+        ref_text = match.group(2).strip()
+        old_refs[old_num] = ref_text
+    
+    if not old_refs:
+        return text
+    
+    # Find inline citations in order of first appearance
+    citation_pattern = re.compile(r'\[(\d+)\]')
+    seen_nums = []
+    for match in citation_pattern.finditer(body):
+        num = int(match.group(1))
+        if num in old_refs and num not in seen_nums:
+            seen_nums.append(num)
+    
+    # Only renumber refs that are actually cited (filter_unused_references already removed others)
+    all_old_nums = seen_nums
+    
+    # Create old -> new mapping
+    old_to_new = {old: idx + 1 for idx, old in enumerate(all_old_nums)}
+    
+    # Replace inline citations
+    def replace_citation(match):
+        old_num = int(match.group(1))
+        return f"[{old_to_new[old_num]}]" if old_num in old_to_new else match.group(0)
+    
+    new_body = citation_pattern.sub(replace_citation, body)
+    
+    # Rebuild references section
+    new_refs_lines = [f"\n{header_used}"]
+    for old_num in all_old_nums:
+        new_num = old_to_new[old_num]
+        new_refs_lines.append(f"[{new_num}]: {old_refs[old_num]}")
+    
+    return new_body.rstrip() + "\n" + "\n".join(new_refs_lines) + "\n"
+
+
 def generate_for_topic(topic: str, user_id: str = "script_user", flexible: bool = False) -> str:
     """Call the appropriate chatbot and return the final article text.
 
@@ -124,9 +192,12 @@ def main():
             # Post-process to remove any unused references (isolated behavior as requested).
             # This keeps all content unchanged except the Sources/References block.
             filtered = filter_unused_references(filepath.read_text(encoding='utf-8'))
-            filepath.write_text(filtered, encoding='utf-8')
+            
+            # Renumber references sequentially (1, 2, 3, ...) without gaps
+            renumbered = renumber_references(filtered)
+            filepath.write_text(renumbered, encoding='utf-8')
 
-            print(f"  wrote {filepath} ({len(filtered.split())} words)")
+            print(f"  wrote {filepath} ({len(renumbered.split())} words)")
             # mark done
             new_lines.append(stripped + ' - done')
         else:

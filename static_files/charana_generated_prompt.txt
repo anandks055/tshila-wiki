@@ -1,0 +1,108 @@
+Write an encyclopedia-style article about **charana** using ONLY the information below.
+
+DO NOT invent any new facts, characters, events, or narrative beyond what is present in the supplied text. If the source material is brief, your output should be correspondingly brief (do not pad for length).
+
+Use fluent English prose and Markdown formatting (##) for section headings.
+- Include ALL details from the dictionary API response (word, other_scripts, llm_def, definitions, similar_words) in the generated article.
+- If similar_words are present, list them and connect them to the main term.
+
+## STRUCTURAL AND TERMINOLOGY GUIDELINES (CRITICAL)
+- Always include an Etymology section (## Etymology) at the start if word meaning/origin is available.
+- For longer content involving multiple texts or contexts, organize into multiple thematic sections.
+- Try to Use (NOT MANDATORY) authentic Indic terminology for section headings: Shruti, Smriti, Purana, Itihasa, Kavya, Dharma, Artha, etc.
+- Avoid (NOT MANDATORY) Western academic terms: no "mythology", "sacred texts" — use traditional Indic categories instead.
+- NEVER use the term "Hinduism" — always write "Indic knowledge traditions".
+- When sources mention different texts (Mahabharata, Ramayana, Puranas, etc.), create separate sections for each if content is substantial.
+
+## Completeness (critical)
+- Include ALL content from the source texts — every named person, warrior, event, quote, and detail.
+- Do NOT summarise lists; if the source gives 20 warriors killed, list all 20.
+- Do NOT omit direct quotes; if a speaker's exact words are given, reproduce them fully.
+- Do NOT collapse step-by-step sequences; reproduce every step in the order given.
+- If the source material is long and rich, your article must be correspondingly long and complete.
+
+## Reference handling
+- The source texts below have already had their inline [N] citations substituted with the correct final reference numbers matching the REFERENCE_MAP.
+- Copy those [N] numbers through exactly as they appear — do NOT change, remove, or renumber them.
+- Every factual sentence must carry its citation(s) inline, e.g. "…fought valiantly [3][5]."
+- Do NOT cite a number that does not appear in the REFERENCE_MAP.
+- Do NOT leave a REFERENCE_MAP entry uncited if the fact it supports appears in your article.
+
+## Sources and References section
+- Add a ## Sources and References section at the very end.
+- List every reference number that you cited inline, with its exact name from the REFERENCE_MAP.
+- Format: [N]: source name
+- No URLs.
+
+=== SOURCE DATA ===
+
+DEFINITIONS FROM 8 SOURCES:
+  SOURCE 1 — Concise Encyclopedia of Hinduism by Swami Harshananda:
+  Caraṇa literally means ‘that by which one moves’.
+
+Caraṇa, General Meaning:
+The word ‘caraṇa’ has been used in several senses like:
+Foot
+A quarter of verse
+Pillar of a temple
+Part of a musical composition in Carnatic music
+
+Caraṇa as per Vedas:
+In the Vedic terminology, it refers to a branch of the Veda in a much larger sense and the group of people who study it. It includes not only the particular śākhā[1] but also its allied literature like the law-books. 
+
+Caraṇa as per Buddhism:
+In Buddhism, it refers to the eight aspects of character like fearlessness and self-control, fit to be cultivated.
+
+
+  SOURCE 2 — Sanskrit Glossary from Sanskrit Documents Website:
+  foot
+
+  SOURCE 3 — Concise Encyclopedia of Hinduism by Swami Harshananda, (extracted 2024), hindupedia.org:
+  Caraṇa, meaning 'that by which one moves', is used in various contexts including foot, a quarter of verse, pillar of a temple, and a part of a musical composition in bilāsanda music [4].
+
+  SOURCE 4 — A Dictionary of Sanskrit Grammar by Mahāmahopādhyāya KASHINATH VASUDEV ABHYANKAR:
+  explained as a synonym of the word शाखा which means a branch or a school of Vedic Learning; cf. चरणशब्दाः कठकलापादयः Kas. on P.IV.2.46.
+
+  SOURCE 5 — Vācaspatyam: bṛhat saṃskṛtābhidhānam by BHAṬṬĀCĀRYA, T. V. (1873). 5 5. Vārāṇasī, Caukhambā Saṃskṛta Sīrīja Āphisa.:
+  पु० चर--करणे ल्युट् । १ देहावयवभेदे पादे “सुतेन धातोश्चरणौ भुवस्तले” माघः “द्वितीये हस्तचरणौ तृतीये बधमर्हति” मनुः । २ वेदैकदेशे शाखापरपर्याये “गोत्रं च चरणैः सह” महाभाष्यका० । चरणव्यूहः । ३ अर्कादेः किरणे । ४ श्लोकानां चतुर्थभागे पादे च । “प्रथमाङ्घ्रिसमोयस्य तृतीयश्चरणोभवेत्” छन्दोम० । “५ चतुर्थभागमात्रे । “पश्यन्ति खेटाश्चरणाभिवृद्धितः” ज्योति० । ६ एक देशमात्रे “ज्योतिश्चरणाभिधानात्” शा सू० । भावे ल्युट् । ७ अनुष्ठाने “अकृत्वा भैक्ष्यचरणम्” “तपञ्चश्चरणैश्चोग्रैः” मनुः । “रमणोयचरणा अभ्यासोह रमणीयां योनिमापद्येरन्” श्रुतिः चरणशब्दस्य आचारार्थकत्वेऽपि कर्म्ममात्रपरत्वमुक्तं शा० सू० भा० तच्चानुशयशब्दे १८६ पृ० उक्तम् चरण + चतुरर्थ्यां तृणास । चरणस तन्निर्वृत्तादौ त्रि०
+
+  SOURCE 6 — Alar: Kannada-English dictionary by V. Krishna:
+  Kannada word: ಚರಣ
+Phonetic notation: caraṇa
+Definitions:
+1. (noun) the act or an instance of moving; movement.
+2. (noun) the way a person behaves or acts; conduct; manners; behaviour.
+3. (noun) that part of the leg on which a person stands or moves; the foot.
+4. (noun) an arrangement of a certain number of lines, usu. four or more, sometimes having a fixed length, meter or rhyme scheme, forming a division of a poem; a stanza.
+5. (noun) a symbol for the number two.
+6. (noun) (jain.) that part of jaina scriptures that deals with the conduct of, procedures to be observed by, ascetics and householders.
+
+  SOURCE 7 — Vedic Rituals Kosha:
+  न. (चर+ल्युट्) कर्मकाण्डीय उपचार=व्यवहार (‘सप्तदश- अगनीषोमीयाः तेषां समानं चरणम्’, अनु. इनका व्यहवहार एक साथ होता है), शां.श्रौ.सू. 15.1.2० (वाजपेय) चमसकम्पन चरण 228
+
+  SOURCE 8 — Bharati Kosha:
+  (पुं) चरन्त्यनेन । चर(गतौ)+ल्युट् । ‘करणाधिकरणयोश्च’ ३.३.११७। १.पादः। ‘आजह्रतुस्तच्चरणौ पृथिव्यां स्थलारविन्दश्रियमव्यवस्थाम्’ कुमार०१.३३। ‘पादः पदघ्रिश्चरणोऽस्रियाम्’ अमरः। २.वेदस्येकः भागः वा शाखा । ‘गोत्रं च चरणैः सह’ महाभाष्यम् । ३.सूर्यचन्द्रकिरणः। ४.श्लोकस्य चतुर्थांशः। ५.आधारस्तम्भः। (न) ६.सञ्चरणम् । ७.अनुष्ठानम् । ‘अप्सरसां गन्धर्वाणां मृगाणां चरणे चरन्’ ऋग्वेदः १०.१३९.९ । ८.अटनम् । चर(भक्षणे)+ल्युट् । ९.भक्षणम् ।
+
+SIMILAR WORDS (6):
+  carana, cāraṇa, caraṇaḥ, cāraṇaḥ, caraṇam, caraṇaṃ
+
+REFERENCE_MAP:
+The inline citation numbers in the source texts above have already been
+substituted to match this map. Copy them through as-is — do NOT renumber.
+  [1]: Concise Encyclopedia of Hinduism by Swami Harshananda
+  [2]: Sanskrit Glossary from Sanskrit Documents Website
+  [3]: Concise Encyclopedia of Hinduism by Swami Harshananda, (extracted 2024), hindupedia.org
+  [4]: Caraṇa, Conc. Encyl. Hinduism, Swami Harshananda
+  [5]: A Dictionary of Sanskrit Grammar by Mahāmahopādhyāya KASHINATH VASUDEV ABHYANKAR
+  [6]: Vācaspatyam: bṛhat saṃskṛtābhidhānam by BHAṬṬĀCĀRYA, T. V. (1873). 5 5. Vārāṇasī, Caukhambā Saṃskṛta Sīrīja Āphisa.
+  [7]: Alar: Kannada-English dictionary by V. Krishna
+  [8]: Vedic Rituals Kosha
+  [9]: Bharati Kosha
+  [10]: Similar words
+
+=== END OF SOURCE DATA ===
+
+IMPORTANT: The inline [N] citations in the source texts above already use the correct
+final reference numbers from the REFERENCE_MAP. Do NOT change them.
+Include ALL content from the source texts — do not skip quotes, lists, or sequences.
+For every named warrior, event, quote, or detail in the source, include it in the article.

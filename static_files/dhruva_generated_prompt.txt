@@ -1,0 +1,126 @@
+Write an encyclopedia-style article about **Dhruva** using ONLY the information below.
+
+DO NOT invent any new facts, characters, events, or narrative beyond what is present in the supplied text. If the source material is brief, your output should be correspondingly brief (do not pad for length).
+
+Use fluent English prose and Markdown formatting (##) for section headings.
+- Include ALL details from the dictionary API response (word, other_scripts, llm_def, definitions, similar_words) in the generated article.
+- If similar_words are present, list them and connect them to the main term.
+
+## STRUCTURAL AND TERMINOLOGY GUIDELINES (CRITICAL)
+- Always include an Etymology section (## Etymology) at the start if word meaning/origin is available.
+- For longer content involving multiple texts or contexts, organize into multiple thematic sections.
+- Try to Use (NOT MANDATORY) authentic Indic terminology for section headings: Shruti, Smriti, Purana, Itihasa, Kavya, Dharma, Artha, etc.
+- Avoid (NOT MANDATORY) Western academic terms: no "mythology", "sacred texts" — use traditional Indic categories instead.
+- NEVER use the term "Hinduism" — always write "Indic knowledge traditions".
+- When sources mention different texts (Mahabharata, Ramayana, Puranas, etc.), create separate sections for each if content is substantial.
+
+## Completeness (critical)
+- Include ALL content from the source texts — every named person, warrior, event, quote, and detail.
+- Do NOT summarise lists; if the source gives 20 warriors killed, list all 20.
+- Do NOT omit direct quotes; if a speaker's exact words are given, reproduce them fully.
+- Do NOT collapse step-by-step sequences; reproduce every step in the order given.
+- If the source material is long and rich, your article must be correspondingly long and complete.
+
+## Reference handling
+- The source texts below have already had their inline [N] citations substituted with the correct final reference numbers matching the REFERENCE_MAP.
+- Copy those [N] numbers through exactly as they appear — do NOT change, remove, or renumber them.
+- Every factual sentence must carry its citation(s) inline, e.g. "…fought valiantly [3][5]."
+- Do NOT cite a number that does not appear in the REFERENCE_MAP.
+- Do NOT leave a REFERENCE_MAP entry uncited if the fact it supports appears in your article.
+
+## Sources and References section
+- Add a ## Sources and References section at the very end.
+- List every reference number that you cited inline, with its exact name from the REFERENCE_MAP.
+- Format: [N]: source name
+- No URLs.
+
+=== SOURCE DATA ===
+
+DEFINITIONS FROM 8 SOURCES:
+  SOURCE 1 — Concise Encyclopedia of Hinduism by Swami Harshananda:
+  Dhruva literally means ‘the steady one’.
+Prahlāda and Dhruva have carved out a permanent place in the annals of child-devotees in our purāṇas.
+Dhruva was the elder son of the king Uttānapāda from his first wife Sunīti. Enamored by Suruci, his second wife, the king had  completely neglected Sunīti and her son Dhruva.
+Once, snubbed by his step-mother Suruci in the presence of his father, Dhruva became despondent and approached his mother for solace. She advised him to pray to Lord Viṣṇu by performing austerities. When he was going to the forest, the sage Nārada met him and instructed him to meditate. 
+After a severe penance, Dhruva was blessed by Lord Viṣṇu with a kingdom. He was also bestowed by a long and happy life, both here and in the heavenly regions after death. That is now known as ‘Dhruvanakṣatra’.[1]
+Once Uttama, the younger brother of Dhruva, went to the Himalayas on a hunting expedition but was killed in an encounter with the yakṣas (a kind of demigods)[2]. Enraged by this, Dhruva attacked and killed them in large numbers. Kubera was forced to fight with Dhruva, when Svāyambhuva Manu (the forefather of Dhruva) appeared on the scene and stopped the fight. Then the two became friends. Dhruva ruled his kingdom according to the highest principles of dharma for many years.
+
+
+  SOURCE 2 — Concise Encyclopedia of Hinduism by Swami Harshananda, (extracted 2024), hindupedia.org:
+  Dhruva, meaning 'the steady one,' was the elder son of rājā Uttānapāda who performed severe penance and was rewarded by Lord Viṣṇu with a rājya and a long life [3]. His position in the sky is marked by the pole star, Dhruvanakṣatra, and he resides in the tail-region of the Śiśumāra celestial region after death [4].
+
+  SOURCE 3 — A Dictionary of Sanskrit Grammar by Mahāmahopādhyāya KASHINATH VASUDEV ABHYANKAR:
+  (1) fixed,stationary, as contrasted with moving (ध्रुव) which is termed अपादान and hence put in the ablative case; cf ध्रुवमपायेऽपादानम् P. I. 4.24; (2) repeated sound (नाद) of a third or a fourth consonant of the class consonants when it occurs at the end of the first word of a split up compound word; cf. R. Pr. VI. II and XI. 24.
+
+  SOURCE 4 — Dhara Summary, Shiva Purana by J. L. Shastri:
+  Dhruva, in the Shiva Purana, is a multifaceted figure appearing in various contexts. He is identified as the Pole Star, which the brahmins honor during the wedding ceremonies of Śiva and Pārvatī [7], positioned a hundred thousand Yojanas above the constellation of the seven sages, serving as the prop of the circle of luminous bodies [8]. Additionally, Dhruva is described as a king who worships Śiva [9], a son of Uttānapāda and Sunīti, renowned for his penance lasting three thousand divine years, rewarded with a stable position by Lord Brahmā [10], one of the Vasus whose son, Kāla, influences the worlds [11], and also the son of Puṣyanāman and the father of Agnivarṇa [12].
+
+
+  SOURCE 5 — Dhara Summary, Garuda Purana by Manmatha Nath Dutt | 1908 | 245,256 words | ISBN-13: 9788183150736:
+  Dhruva, according to the Garuda Purana, is a multifaceted character known for his spiritual achievements and royal lineage. In Chapter VI, he is described as the son of Uttanapada and Suniti, who attained a high station through his devotion to Janardhana [14]. In Chapter LVI, Dhruva is identified as the youngest of King Medatithi's seven sons and later becomes the king of the insular continent of Plaksha [15]. Finally, in Chapter CCXXXV, Dhruva is noted for attaining the highest region of bliss and Vishnu through his devout worship [16].
+
+
+  SOURCE 6 — Dhara Summary, Harivamsha Purana by Manmatha Nath Dutt | 1897 | 293,872 words | ISBN-10: 8178542188 | ISBN-13: 9788178542188:
+  Dhruva, according to the Harivamsha Purana, is multifaceted, appearing in various contexts. He is initially described as the son of Uttanapada and Sunrita, known for his ascetic practices and later granted a permanent place in the heavens by Brahma [18]. In another account, Dhruva is one of the Vasus who gives birth to Divine Kala [19]. Additionally, he is depicted as a sacrificial vase made of the wood of the Indian fig-leaf, crafted by Vishnu [20]. Dhruva is also mentioned as one of Surabhi's sons [21], and in a different context, as a celestial position where a sacrifice in the form of a deer finds refuge [22].
+
+
+  SOURCE 7 — Dhara Summary, Mahabharata by Kisari Mohan Ganguli | 2,566,952 words | ISBN-10: 8121505933:
+  Dhruva, in the Mahabharata, is portrayed in various contexts. He is one of the Vasus, with a son named Kala, the destroyer of the worlds [24], and also one of Yayati's sons [25]. Additionally, Dhruva appears as a royal sage in Yama's assembly house [26], a Kalinga prince slain by Bhima in single combat [27], and a warrior fighting for the Pandavas [28]. Dhruva is also identified as a form of Krishna, symbolizing stability and unchanging essence [29], and as the pass through which the river Ganga flows [30]. Furthermore, the inability to see the star Dhruva is seen as an omen indicating one has only one year left to live [31]. Dhruva is also listed among the seven regenerate Rishis, including Visvamitra [32], and is recognized as one of the great Rishis who visited Bhishma on his deathbed [33]. Lastly, Dhruva is invoked in the Mantra for constancy and blessings [34].
+
+
+  SOURCE 8 — Dhara Summary, Srimadbhagavata kathamruta sara Part-3  (English) by Sri Sri Rangapriya Sri Srih:
+  Dhruva, son of Uttānapāda and Sunīti, is an incarnation of the Lord known as Dhruva-vara-pradātā, renowned for his intense devotion and receiving a divine boon from the Lord [36]. According to Śrīmadbhāgavata Kathāmrutasāra Part-1, Skandha-4, Chapter 10, Dhruva is also a prince who, after being dishonored by his stepmother, performs rigorous penance and gains the favor of Lord Vāsudeva [37]. His name symbolizes permanence, making him a symbol of eternal glory and spiritual achievement, known for his unwavering devotion and ascetic practices [37]. Additionally, Dhruva is part of the lineage of Prācīnabarhi, tracing back to Svāyambhuvamanu, highlighting his connection to ancient and revered royal lineages [38].
+
+
+SIMILAR WORDS (5):
+  dhruv, dhruvā, dhruvaḥ, dhruvam, dhruvaṃ
+
+REFERENCE_MAP:
+The inline citation numbers in the source texts above have already been
+substituted to match this map. Copy them through as-is — do NOT renumber.
+  [1]: Concise Encyclopedia of Hinduism by Swami Harshananda
+  [2]: Concise Encyclopedia of Hinduism by Swami Harshananda, (extracted 2024), hindupedia.org
+  [3]: Dhruva, Conc. Encyl. Hinduism, Swami Harshananda
+  [4]: Śiśumāra, Conc. Encyl. Hinduism, Swami Harshananda
+  [5]: A Dictionary of Sanskrit Grammar by Mahāmahopādhyāya KASHINATH VASUDEV ABHYANKAR
+  [6]: Dhara Summary, Shiva Purana by J. L. Shastri
+  [7]: Shiva Purana->Section 2.3 - Rudra-saṃhitā (3): Pārvatī-khaṇḍa->Chapter 50 - Description of fun and frolic
+  [8]: Shiva Purana->Section 5 - Umā-Saṃhitā->Chapter 19 - Worlds (loka) and Planets (graha)
+  [9]: Shiva Purana->Section 4 - Koṭirudra-Saṃhitā->Chapter 37 - Devotion to lord Śiva
+  [10]: Shiva Purana->Section 5 - Umā-Saṃhitā->Chapter 30 - Description of Creation
+  [11]: Shiva Purana->Section 5 - Umā-Saṃhitā->Chapter 31 - Description of Creation (2)
+  [12]: Shiva Purana->Section 5 - Umā-Saṃhitā->Chapter 39 - Kings of the solar race (sūryavaṃśa)
+  [13]: Dhara Summary, Garuda Purana by Manmatha Nath Dutt | 1908 | 245,256 words | ISBN-13: 9788183150736
+  [14]: Garuda Purana -> Agastya Samhita -> Chapter VI - Re-incarnation of Daksha in the form of Prachetas
+  [15]: Garuda Purana -> Agastya Samhita -> Chapter LVI - Enumeration of the names of princes of the continent of Plaksha, etc.
+  [16]: Garuda Purana -> Dhanvantari Samhita -> Chapter CCXXXV - The mode of Practising the Great Yoga
+  [17]: Dhara Summary, Harivamsha Purana by Manmatha Nath Dutt | 1897 | 293,872 words | ISBN-10: 8178542188 | ISBN-13: 9788178542188
+  [18]: Harivamsha Purana -> Book 1 - Harivamsa Parva -> Chapter 2 - The Origin of Men: the Birth of Daksha
+  [19]: Harivamsha Purana -> Book 1 - Harivamsa Parva -> Chapter 3 - An Account of Various Families; Daksha’s Offspring
+  [20]: Harivamsha Purana -> Book 1 - Harivamsa Parva -> Chapter 40 - A Description of Vishnu
+  [21]: Harivamsha Purana -> Book 3 - Bhavishya Parva -> Chapter 14 - Brahma’s Creation
+  [22]: Harivamsha Purana -> Book 3 - Bhavishya Parva -> Chapter 28 - Shiva Obstructs Daksha’s Sacrifice and Hari Fights with Him
+  [23]: Dhara Summary, Mahabharata by Kisari Mohan Ganguli | 2,566,952 words | ISBN-10: 8121505933
+  [24]: Mahabharata->Adi Parva->Sambhava Parva->Section LXVI
+  [25]: Mahabharata->Adi Parva->Sambhava Parva->Section LXXV
+  [26]: Mahabharata->Sabha Parva->Lokapala Sabhakhayana Parva->Section VIII
+  [27]: Mahabharata->Drona Parva->Ghatotkacha-badha Parva->Section CLIV
+  [28]: Mahabharata->Drona Parva->Ghatotkacha-badha Parva->Section CLVII
+  [29]: Mahabharata->Shanti Parva->Rajadharmanusasana Parva->Section XXXIX
+  [30]: Mahabharata->Shanti Parva->Mokshadharma Parva->Section CCXXVIII
+  [31]: Mahabharata->Shanti Parva->Mokshadharma Parva->Section CCCXV
+  [32]: Mahabharata->Anushasana Parva->Anusasanika Parva->Section II
+  [33]: Mahabharata->Anushasana Parva->Anusasanika Parva->Section XXVI
+  [34]: Mahabharata->Anushasana Parva->Anusasanika Parva->Section CXLIX
+  [35]: Dhara Summary, Srimadbhagavata kathamruta sara Part-3  (English) by Sri Sri Rangapriya Sri Srih
+  [36]: Śrīmadbhāgavata Kathāmrutasāra Part-1->Skandha-2->Chapter 4: The Teaching of Sage Śukabrahmarṣi
+  [37]: Śrīmadbhāgavata Kathāmrutasāra Part-1->Skandha-4->Chapter 10: The Story of Dhruva
+  [38]: Śrīmadbhāgavata Kathāmrutasāra Part-1->Skandha-4->Chapter 11: The Saga of Purañjana
+  [39]: Similar words
+
+=== END OF SOURCE DATA ===
+
+IMPORTANT: The inline [N] citations in the source texts above already use the correct
+final reference numbers from the REFERENCE_MAP. Do NOT change them.
+Include ALL content from the source texts — do not skip quotes, lists, or sequences.
+For every named warrior, event, quote, or detail in the source, include it in the article.

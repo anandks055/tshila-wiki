@@ -1,0 +1,109 @@
+Write an encyclopedia-style article about **varana** using ONLY the information below.
+
+DO NOT invent any new facts, characters, events, or narrative beyond what is present in the supplied text. If the source material is brief, your output should be correspondingly brief (do not pad for length).
+
+Use fluent English prose and Markdown formatting (##) for section headings.
+- Include ALL details from the dictionary API response (word, other_scripts, llm_def, definitions, similar_words) in the generated article.
+- If similar_words are present, list them and connect them to the main term.
+
+## STRUCTURAL AND TERMINOLOGY GUIDELINES (CRITICAL)
+- Always include an Etymology section (## Etymology) at the start if word meaning/origin is available.
+- For longer content involving multiple texts or contexts, organize into multiple thematic sections.
+- Try to Use (NOT MANDATORY) authentic Indic terminology for section headings: Shruti, Smriti, Purana, Itihasa, Kavya, Dharma, Artha, etc.
+- Avoid (NOT MANDATORY) Western academic terms: no "mythology", "sacred texts" — use traditional Indic categories instead.
+- NEVER use the term "Hinduism" — always write "Indic knowledge traditions".
+- When sources mention different texts (Mahabharata, Ramayana, Puranas, etc.), create separate sections for each if content is substantial.
+
+## Completeness (critical)
+- Include ALL content from the source texts — every named person, warrior, event, quote, and detail.
+- Do NOT summarise lists; if the source gives 20 warriors killed, list all 20.
+- Do NOT omit direct quotes; if a speaker's exact words are given, reproduce them fully.
+- Do NOT collapse step-by-step sequences; reproduce every step in the order given.
+- If the source material is long and rich, your article must be correspondingly long and complete.
+
+## Reference handling
+- The source texts below have already had their inline [N] citations substituted with the correct final reference numbers matching the REFERENCE_MAP.
+- Copy those [N] numbers through exactly as they appear — do NOT change, remove, or renumber them.
+- Every factual sentence must carry its citation(s) inline, e.g. "…fought valiantly [3][5]."
+- Do NOT cite a number that does not appear in the REFERENCE_MAP.
+- Do NOT leave a REFERENCE_MAP entry uncited if the fact it supports appears in your article.
+
+## Sources and References section
+- Add a ## Sources and References section at the very end.
+- List every reference number that you cited inline, with its exact name from the REFERENCE_MAP.
+- Format: [N]: source name
+- No URLs.
+
+=== SOURCE DATA ===
+
+DEFINITIONS FROM 9 SOURCES:
+  SOURCE 1 — The Purana index. Madras by RAMACHANDRA DĪKSHITAR, V. R. (1951-55), Univ. of Madras.:
+  the heavenly animal which came down for Haryanga's help.
+
+  SOURCE 2 — Concise Encyclopedia of Hinduism by Swami Harshananda, (extracted 2024), hindupedia.org:
+  Vāraṇa is a type of wood (Crataeva roxburghii) used to make Kūrca tāmrapatra for vaidika rituals.
+Reference:
+The content is extracted from the below word(s) in Conc. Encyl. Hinduism, Swami Harshananda,
+Kurca, Conc. Encyl. Hinduism, Swami Harshananda
+
+  SOURCE 3 — Vācaspatyam: bṛhat saṃskṛtābhidhānam by BHAṬṬĀCĀRYA, T. V. (1873). 5 5. Vārāṇasī, Caukhambā Saṃskṛta Sīrīja Āphisa.:
+  न० चु०--वृ--ल्युट् । प्रवृत्तिप्रतिरोधे १ निषेधे मेदि० २ हस्तादिवारणे च जटा० । ३ गजे पुंस्त्री० अमरः स्त्रियां ङीष् । ४ वाणवारे कवचे पुंन० शब्दच० ।
+
+  SOURCE 4 — Alar: Kannada-English dictionary by V. Krishna:
+  Kannada word: ವಾರಣ
+Phonetic notation: vāraṇa
+Definitions:
+1. (noun) the act of opposing; opposition.
+2. (noun) a warding off or preventing.
+3. (noun) the act of covering, veiling something from being seen.
+4. (noun) a protecting or being protected; protection.
+5. (noun) a hindrance; an obstacle.
+6. (noun) the raised land around a water tank; the bund of a water tank.
+7. (noun) an elephant.
+8. (noun) the trunk of an elephant.
+9. (noun) an armour worn by soldiers.
+10. (noun) the entrance of a building; a door.
+11. (noun) a camel.
+12. (noun) a cloud.
+13. (noun) the ocean.
+14. (noun) the tree Pistacia vera of Anacardiaceae family.
+15. (noun) its nut.
+
+  SOURCE 5 — The practical Sanskrit-English dictionary by APTE, V. S. (1890), containing appendices on Sanskrit prosody and important literary & geographical names in the ancient history of India, for the use of schools and colleges. Poona, Shiralkar.:
+  [a.] (ṇī feminine.) [vṛ-lyu lyuṭ vā] Warding off, resisting, opposing. --ṇaṃ 1 Warding off, restraining, obstructing; na bhavati bisataṃturvāraṇaṃ vāraṇānāṃ [Bh. 2. 17.] --2 An obstacle, impediment. --3 Resistance, opposition. --4 Defending, guarding, protecting. --ṇaḥ 1 An elephant; na bhavati bisataṃturvāraṇaṃ vāraṇānāṃ [Bh. 2. 17]; [Ku. 5. 70]; [R. 12. 93]; [Śi. 18. 56.] --2 An armour, mail-coat. --Comp. --buṣā, --sā, --vallabhā the plantain tree. --sāhvayaṃ Name. of Hastināpura.
+
+  SOURCE 6 — Vedic Rituals Kosha:
+  वि. (वरणस्य विकारः, वरण + अण्) वरण की लकड़ी से निर्मित, का.श्रौ.सू. 1.3.37. वे यज्ञीय उपकरण, जिनका सम्बन्ध होम से नहीं होता, इसी के काष्ठ से निर्मित होते हैं, का.श्रौ.सू. 1.3.37, यदि अन्यथा निर्धारित न हो तो।
+
+  SOURCE 7 — Puranic encyclopaedia: a comprehensive dictionary with special reference to the epic and Puranic literature by MANI, V. (1975), Delhi, Motilal Banarsidass.:
+  A country in ancient Bhārata. It is mentioned in Mahābhārata, Udyoga Parva, Chapter 19, Stanza 31, that the army of the Kauravas had surrounded this country.
+
+  SOURCE 8 — An index to the names in the Mahābhārata, with short explanations and a concordance to the Bombay and Calcutta editions and P.C. Roy's translation by SØRENSEN, S., RĀYA, P., OLESEN, E., & ANDERSEN, D. (1904).:
+  name of a country(?). § 555 (Sainyodyogap.): V, 19, 600 (among the regions which were overrun by the army of the Kurus)
+
+  SOURCE 9 — Summary from the location Data:
+  Varana is a village located in the Sami tehsil of Patan district in Gujarat, India, with a pincode of 384245. It is situated approximately 50 kilometers west of Patan's district headquarters and is known for its proximity to the West Banas and Puspavati rivers. Notable temples include the Mogal Mataji Temple and Maa Khodiyar Dham. Nearby educational institutions such as VARANA PRIMARY SCHOOL and Swami Dayand Science and Arts College offer educational facilities within a few kilometers. The village is also near the Sardar Vallabhbhai Patel International Airport in Ahmedabad.
+
+SIMILAR WORDS (13):
+  varān, varanā, varaṇa, varaṇā, varāṇa, vāraṇā, varaṇaḥ, varāṇaḥ, vāraṇaḥ, varaṇaṃ, vāraṇam, vāraṇaṃ, Varanga
+
+REFERENCE_MAP:
+The inline citation numbers in the source texts above have already been
+substituted to match this map. Copy them through as-is — do NOT renumber.
+  [1]: The Purana index. Madras by RAMACHANDRA DĪKSHITAR, V. R. (1951-55), Univ. of Madras.
+  [2]: Concise Encyclopedia of Hinduism by Swami Harshananda, (extracted 2024), hindupedia.org
+  [3]: Vācaspatyam: bṛhat saṃskṛtābhidhānam by BHAṬṬĀCĀRYA, T. V. (1873). 5 5. Vārāṇasī, Caukhambā Saṃskṛta Sīrīja Āphisa.
+  [4]: Alar: Kannada-English dictionary by V. Krishna
+  [5]: The practical Sanskrit-English dictionary by APTE, V. S. (1890), containing appendices on Sanskrit prosody and important literary & geographical names in the ancient history of India, for the use of schools and colleges. Poona, Shiralkar.
+  [6]: Vedic Rituals Kosha
+  [7]: Puranic encyclopaedia: a comprehensive dictionary with special reference to the epic and Puranic literature by MANI, V. (1975), Delhi, Motilal Banarsidass.
+  [8]: An index to the names in the Mahābhārata, with short explanations and a concordance to the Bombay and Calcutta editions and P.C. Roy's translation by SØRENSEN, S., RĀYA, P., OLESEN, E., & ANDERSEN, D. (1904).
+  [9]: Summary from the location Data
+  [10]: Similar words
+
+=== END OF SOURCE DATA ===
+
+IMPORTANT: The inline [N] citations in the source texts above already use the correct
+final reference numbers from the REFERENCE_MAP. Do NOT change them.
+Include ALL content from the source texts — do not skip quotes, lists, or sequences.
+For every named warrior, event, quote, or detail in the source, include it in the article.
