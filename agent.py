@@ -100,15 +100,29 @@ def heritage_lookup(verse_part: Optional[str] = None, dict_word: Optional[str] =
             results['chunks'] = {"error": str(e)}
 
     if dict_word:
-        logger.info("[DICT API] word=%r", dict_word)
+        DICT_API_URL = "http://192.168.167.88:3615/bheri/dict/v1_5/get_defs/"
+        logger.info("[DICT API] endpoint=%s word=%r", DICT_API_URL, dict_word)
         try:
             response = requests.get(
-                "https://project.iith.ac.in/bheri/dict/v1_5/get_defs/",
+                DICT_API_URL,
                 headers=headers,
                 params={"word": dict_word},
                 timeout=30,
             )
-            response.raise_for_status()
+            try:
+                response.raise_for_status()
+            except Exception as e:
+                status_info = f"{response.status_code} {response.reason}"
+                logger.error("[DICT API] ✗ failed — %s | %s", status_info, e)
+                results['definition'] = {
+                    "error": str(e),
+                    "status_code": response.status_code,
+                    "endpoint": DICT_API_URL,
+                    "reason": response.text,
+                }
+                # stop here: this is critical
+                return json.dumps({"results": results}, ensure_ascii=False)
+
             res = response.json()
             logger.debug("[DICT API] response payload: %s", res)
             if res.get('found_match'):
@@ -131,7 +145,10 @@ def heritage_lookup(verse_part: Optional[str] = None, dict_word: Optional[str] =
             results['definition'] = res
         except Exception as e:
             logger.error("[DICT API] ✗ failed — %s", e)
-            results['definition'] = {"error": str(e)}
+            results['definition'] = {
+                "error": str(e),
+                "endpoint": DICT_API_URL,
+            }
 
     if verse_part:
         logger.info("[VERSE API] phrase=%r", verse_part)
@@ -406,8 +423,7 @@ Use fluent English prose and Markdown formatting (##) for section headings.
 ## STRUCTURAL AND TERMINOLOGY GUIDELINES (CRITICAL)
 - Always include an Etymology section (## Etymology) at the start if word meaning/origin is available.
 - For longer content involving multiple texts or contexts, organize into multiple thematic sections.
-- Try to Use (NOT MANDATORY) authentic Indic terminology for section headings: Shruti, Smriti, Purana, Itihasa, Kavya, Dharma, Artha, etc.
-- Avoid (NOT MANDATORY) Western academic terms: no "mythology", "sacred texts" — use traditional Indic categories instead.
+- Try to Use (NOT MANDATORY) authentic Indic terminology for section headings: Shruti, Smriti, Purana, Itihasa, Kavya, Dharma, Artha, etc. ONLY IF APPLICABLE, don't randomly insert these terms if they don't fit the content.  Use them to organize the material when it naturally divides into those categories.  Otherwise, use meaningful descriptive section titles based on the content.
 - NEVER use the term "Hinduism" — always write "Indic knowledge traditions".
 - When sources mention different texts (Mahabharata, Ramayana, Puranas, etc.), create separate sections for each if content is substantial.
 

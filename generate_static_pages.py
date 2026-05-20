@@ -14,11 +14,22 @@ has been generated. It prints progress to stdout.
 import json
 import re
 import time
+import sys
 from pathlib import Path
 from agent import chatbot, chatbot_flexible
 
-LIST_PATH = Path("small_test_list.txt")
-STATIC_DIR = Path("static_files")
+
+class APIError(Exception):
+    """Raised when a critical API call fails during article generation."""
+    def __init__(self, message: str, api_name: str = "", error_message: str = "", topic: str = ""):
+        super().__init__(message)
+        self.api_name = api_name
+        self.error_message = error_message
+        self.topic = topic
+
+
+LIST_PATH = Path("all_words_deduped.txt")
+STATIC_DIR = Path("/home/anandks/wiki-articles")
 STATIC_DIR.mkdir(exist_ok=True)
 
 
@@ -148,19 +159,66 @@ def generate_for_topic(topic: str, user_id: str = "script_user", flexible: bool 
 
     `flexible` selects the new agent that produces variable‑length output based on
     the size of the API context. When False the original `chatbot` is used.
+
+    Raises APIError if dict API call fails.
     """
     session_id = None
     article_text = ""
     agent = chatbot_flexible if flexible else chatbot
+
     for chunk in agent(topic, user_id, session_id):
         try:
             data = json.loads(chunk)
         except Exception:
             continue
+
+        # Heavily guard against `dict`-failure from tool output.
+        # If DICT API response includes error, stop immediately.
+        def inspect_for_dict_failure(container):
+            if not isinstance(container, dict):
+                return None
+            if "definition" in container:
+                definition = container["definition"]
+                if isinstance(definition, dict) and "error" in definition:
+                    return definition
+            # Might also be nested inside `results`
+            results = container.get("results")
+            if isinstance(results, dict) and "definition" in results:
+                definition = results["definition"]
+                if isinstance(definition, dict) and "error" in definition:
+                    return definition
+            return None
+
+        failure = inspect_for_dict_failure(data)
+        if failure is None and isinstance(data, dict) and "event" in data:
+            content = data.get("content")
+            if isinstance(content, str):
+                try:
+                    parsed = json.loads(content)
+                    failure = inspect_for_dict_failure(parsed)
+                except Exception:
+                    pass
+            elif isinstance(content, dict):
+                failure = inspect_for_dict_failure(content)
+
+        if failure is not None:
+            endpoint = failure.get("endpoint", "https://project.iith.ac.in/bheri/dict/v1_5/get_defs/")
+            status_code = failure.get("status_code", "unknown")
+            message = failure.get("error", "unknown error")
+            reason = failure.get("reason", "")
+            raise APIError(
+                f"DICT API failed for '{topic}' (status {status_code}) on endpoint {endpoint}: {message} {reason}",
+                api_name="DICT API",
+                error_message=f"{status_code} {message} {reason}".strip(),
+                topic=topic,
+            )
+
         if data.get("event") == "RunContent":
             article_text = data.get("content", "")
             break
+
     return article_text
+
 
 
 def main():
@@ -173,41 +231,54 @@ def main():
 
     lines = LIST_PATH.read_text().splitlines()
     new_lines = []
-    for line in lines:
-        stripped = line.strip()
-        if not stripped:
-            new_lines.append(line)
-            continue
-        if stripped.endswith(" - done"):
-            new_lines.append(line)
-            continue
-        topic = stripped
-        print(f"Generating page for '{topic}'{' (flexible)' if args.flexible else ''}...")
-        article = generate_for_topic(topic, flexible=args.flexible)
-        if article:
-            filename = topic.lower().replace(' ', '_').replace('’','').replace("'","") + '.md'
-            filepath = STATIC_DIR / filename
-            filepath.write_text(article)
+    try:
+        for line in lines:
+            stripped = line.strip()
+            if not stripped:
+                new_lines.append(line)
+                continue
+            if stripped.endswith(" - done"):
+                new_lines.append(line)
+                continue
+            topic = stripped
+            print(f"Generating page for '{topic}'{' (flexible)' if args.flexible else ''}...")
+            article = generate_for_topic(topic, flexible=args.flexible)
+            if article:
+                filename = topic.lower().replace(' ', '_').replace("'", "").replace('"', "").replace('/', '_') + '.md'
+                filepath = STATIC_DIR / filename
+                filepath.write_text(article)
 
-            # Post-process to remove any unused references (isolated behavior as requested).
-            # This keeps all content unchanged except the Sources/References block.
-            filtered = filter_unused_references(filepath.read_text(encoding='utf-8'))
-            
-            # Renumber references sequentially (1, 2, 3, ...) without gaps
-            renumbered = renumber_references(filtered)
-            filepath.write_text(renumbered, encoding='utf-8')
+                # Post-process to remove any unused references (isolated behavior as requested).
+                # This keeps all content unchanged except the Sources/References block.
+                filtered = filter_unused_references(filepath.read_text(encoding='utf-8'))
+                
+                # Renumber references sequentially (1, 2, 3, ...) without gaps
+                renumbered = renumber_references(filtered)
+                filepath.write_text(renumbered, encoding='utf-8')
 
-            print(f"  wrote {filepath} ({len(renumbered.split())} words)")
-            # mark done
-            new_lines.append(stripped + ' - done')
-        else:
-            print(f"  no content produced for {topic}, leaving unmodified")
-            new_lines.append(line)
-        # flush to disk after each
-        LIST_PATH.write_text("\n".join(new_lines + lines[len(new_lines):]))
-        # politely pause to avoid overloading APIs
-        time.sleep(1)
-    print("All done.")
+                print(f"  wrote {filepath} ({len(renumbered.split())} words)")
+                # mark done
+                new_lines.append(stripped + ' - done')
+            else:
+                print(f"  no content produced for {topic}, leaving unmodified")
+                new_lines.append(line)
+            # flush to disk after each
+            LIST_PATH.write_text("\n".join(new_lines + lines[len(new_lines):]))
+            # politely pause to avoid overloading APIs
+            time.sleep(1)
+        print("All done.")
+    except APIError as e:
+        print("\n" + "="*70, file=sys.stderr)
+        print("🚨 API FAILURE — GENERATION STOPPED", file=sys.stderr)
+        print("="*70, file=sys.stderr)
+        print(f"Topic: {e.topic}", file=sys.stderr)
+        print(f"API: {e.api_name}", file=sys.stderr)
+        print(f"Error Code/Message: {e.error_message}", file=sys.stderr)
+        print(f"\nReason: {str(e)}", file=sys.stderr)
+        print("="*70, file=sys.stderr)
+        print("\n⚠️  Process stopped. No further articles will be generated.", file=sys.stderr)
+        print(f"Resume from '{e.topic}' once the API issue is resolved.\n", file=sys.stderr)
+        sys.exit(1)
 
 
 if __name__ == "__main__":
