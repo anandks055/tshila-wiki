@@ -1,0 +1,13 @@
+services:
+  wiki-api:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:7171:7171"
+    volumes:
+      - /data/wiki-articles:/data/wiki-articles:ro
+    env_file:
+      - .env
+    environment:
+      STATIC_DIR: /data/wiki-articles
+      ENABLE_REGENERATE: "false"

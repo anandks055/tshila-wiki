@@ -1,3 +1,2 @@
-agno>=2.4.7
-streamlit>=1.45.1
-requests>=2.32.5
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
